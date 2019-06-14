@@ -1,8 +1,10 @@
-.Pizza {
-  background-image: <img src="IP4/img/Pizza2.jpg">;
-  background-size: 100%;
-  margin-bottom: 0%;
-  height: 900px;
+body{
+  padding: 0;
+  margin: 0;
+  background-image: url(../img/Pizza2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .h1 {
   text-align: center;
