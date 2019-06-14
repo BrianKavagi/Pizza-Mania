@@ -12,8 +12,8 @@ body{
   text-align: center;
 }
 .pizza1 {
-  height: 300px;
-  width: 30%;
+  height: 360px;
+  width: 45%;
   float: left;
 }
 /* Add a black background color to the top navigation */
@@ -42,4 +42,8 @@ body{
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
+}
+.gif {
+  width: 50%;
+  heigh: 300px;
 }
