@@ -1,10 +1,12 @@
 body{
   padding: 0;
   margin: 0;
-  background-image: url(../img/Pizza2.jpg);
+  background-image: url(../img/pizza3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  height: 900px;
+  width: 100%;
 }
 .h1 {
   text-align: center;
