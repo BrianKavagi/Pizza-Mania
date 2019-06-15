@@ -1,2 +1,4 @@
 function submit(){
-var PIZZA SIZE=parseInt(document.getElementById('PIZZA SIZE').text);
+var Pizza size = $("#Pizza size");
+var flavor = $("input:radio[name=flavor]:checked").val();
+var Toppings = $("#Toppings").val();

@@ -51,17 +51,39 @@
       <div class="col-6">
         <h3><strong>KINDLY PLACE YOUR ORDER BELOW:</strong></h3>
         <form class="form">
-            PIZZA SIZE:<br>
-            <input type="text" type="number" id="sideX">
+            <p><strong>PIZZA SIZE</strong></p>
+            <select class="form-control" id="Toppings">
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+              </select>
             <br>
-            sideY:<br>
-            <input type="text"type="number" id="sideY">
-            <br>
-            sideZ<br>
-            <input type="text"type="number" id="sideZ">
-            <br>
-            <input type="submit" class="button" value="order" onclick="formvalidation()
-          
+            <p><strong>CRUST</strong></p>
+            <div class="radio">
+                <label>
+                  <input type="radio" name="flavor" value="chocolate" checked>
+                  Chocolate
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="flavor" value="vanilla">
+                  Vanilla
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="flavor" value="cookiesandcream">
+                  Cookies & Cream
+                </label>
+              </div>
+              <p><strong>TOPPINGS:</strong></p>
+              <select class="form-control" id="Toppings">
+                  <option>EXTRA CHEESE</option>
+                  <option>BACON</option>
+                  <option>PINEAPPLES</option>
+                  <option>HAM</option>
+                </select>
        </form>
       </div>
     </div>
