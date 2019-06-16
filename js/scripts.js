@@ -1,19 +1,21 @@
 function submit(){
-var Pizza size = $("#Pizza size");
-var flavor = $("input:radio[name=flavor]:checked").val();
-var Toppings = $("#Toppings").val();
-if(Pizza size="Large") {
-alert("Total 1000");
+var PIZZA SIZE = $("#PIZZA SIZE");
+var Large = parseInt("1000");
+var Medium = parseInt("800");
+var Small = parseInt("500");
+if(Large) {
+alert("1000");
 }
-if(Pizza size="Medium") {
+if(Medium) {
 alert("Total 800");
 }
-if(Pizza size="Small") {
+if(Small) {
 alert("Total 500");
 }
 $(document).ready(function() {
 $("form#submit").submit(function(event) {
-event.preventDefault();
+var Large = parseInt("1000"
+ event.preventDefault();
 $("#output").text(result);
 });
 });
