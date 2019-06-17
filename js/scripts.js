@@ -3,30 +3,37 @@ $(function () {
       event.preventDefault();
       var valuesArray = getValues();
       var size = valuesArray[0];
-      var crust = valuesArray[1];
-      var toppings = valuesArray[2];
-     
+      var meats = valuesArray[1];
+      var veggies = valuesArray[2];
+      var cheese = valuesArray[3];
+      var crust = valuesArray[4];
+      var sauce = valuesArray[5];
       var sizeCost = calculateSize(size);
       var meatCost = calculateMeatVeggie(meats);
+      var veggieCost = calculateMeatVeggie(veggies);
       var cheeseCost = calculateCheese();
       var crustCost = calculateCrust();
+      var sauceCost = 0;
       var totalCost = sizeCost + meatCost + veggieCost + sauceCost + cheeseCost + crustCost;
-   
       meats = concat(meats, meatCost);
       veggies = concat(veggies, veggieCost);
-   
       $('#sizeSelection').html(size);
       $('#sizeCost').html(sizeCost);
       $('#crustSelection').html(crust);
       $('#crustCost').html(crustCost);
-      
+      $('#cheeseSelection').html(cheese);
+      $('#cheeseCost').html(cheeseCost);
+      $('#sauceSelection').html(sauce);
+      $('#sauceCost').html(sauceCost);
+      $('#meatSelection').html(meats);
+      $('#meatCost').html(meatCost);
+      $('#veggieSelection').html(veggies);
+      $('#veggieCost').html(veggieCost);
+      $('#totalCost').html(totalCost);
       $('#receipt').slideToggle(0);
-   
       $('form').slideToggle(0);
       $('#orderAgain').show();
     });
-   
-   
     $('#orderAgain').click(function () {
       event.preventDefault;
       $('form').trigger('reset');
@@ -34,9 +41,7 @@ $(function () {
       $('#receipt').slideToggle(0);
       $('#orderAgain').hide();
     });
-   
    });
-   
    function getValues() {
     var meats = [];
     var veggies = [];
@@ -50,11 +55,9 @@ $(function () {
     var cheese = $('input[name=cheeseRadio]:checked').val();
     var crust = $('input[name=crustRadio]:checked').val();
     var sauce = $('input[name=sauceRadio]:checked').val();
-   
     var values = [size, meats, veggies, cheese, crust, sauce];
     return values;
    };
-   
    function calculateMeatVeggie(array) {
     if (array.length === 0) {
       return 0;
@@ -63,31 +66,27 @@ $(function () {
       return cost;
     }
    };
-   
    function calculateCheese() {
-    if ($('input[name=cheeseRadio]:checked').val() === 'EXTRA CHEESE') {
+    if ($('input[name=cheeseRadio]:checked').val() === 'Extra Cheese') {
       var cost = 3;
       return cost;
     } else return 0;
    };
-   
    function calculateCrust() {
-    if ($('input[name=crustRadio]:checked').val() === 'Stuffed Crust') {
+    if ($('input[name=crustRadio]:checked').val() === 'Cheese Stuffed Crust') {
       var cost = 3;
       return cost;
     } else return 0;
    };
-   
    function calculateSize(size) {
     if (size === "small") {
-      return 500;
+      return 50;
     } else if (size === "Medium") {
-      return 800;
+      return 80;
     } else if (size === "Large") {
-      return 1000;
+      return 100;
     } 
    };
-   
    function concat(toppings, cost) {
     if (cost === 0) {
       return "NONE";
@@ -96,3 +95,5 @@ $(function () {
       return oneWord;
     }
    };
+   
+   
