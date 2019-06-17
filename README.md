@@ -1,5 +1,5 @@
 # PIZZA MANIA
-#### {This is a website for a fastfood company called pizza mania designed for easy ordering and delivery of food to the customer.}, {10/06/2019}
+#### {This is a website for a fastfood company called pizza mania designed for easy ordering and delivery of food to the customer.}, {17/06/2019}
 
 ## Author name
   BRIAN KAVAGI
@@ -18,6 +18,13 @@
  * scripts.js
  * bootstrap.css
  * jquery-3.4.1.js
+
+## Behaviour Driven Development
+  Behaviour     Input      Output
+Equilateral     (3,3,3)   This Is an Equilateral Triangle.
+ Isoceles       (3,3,5)   This Is an Isoceles Triangle.
+  Scalene      (10,20,30) This Is a scalene Triangle.
+
 
 ## Contact Information
  * Kindly contact me via my email address at:
