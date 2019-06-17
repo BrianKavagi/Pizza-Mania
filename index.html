@@ -51,14 +51,32 @@
       <div class="col-6">
         <h3><strong>KINDLY PLACE YOUR ORDER BELOW:</strong></h3>
         <form class="form">
-            <p><strong>PIZZA SIZE:</strong></p>
-            <select class="form-control" id="Large">
-                <option>Large</option> 
-                <option>Medium</option>
-                <option>Small</option>
-              </select>
+          <div class="col-3 text-center">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="selectSize" id="Large" value="Large">
+              <label class="custom-control-label" for="Large">
+                <div>Large (Ksh 1000)</div>
+              </label>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="selectSize" id="Medium" value="Medium">
+              <label class="custom-control-label" for="Medium">
+                <div>Medium (Ksh 800)</div>
+              </label>
+            </div>
+          </div>
+          <div class="col-3 text-center">
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" type="radio" name="selectSize" id="Small" value="Small">
+              <label class="custom-control-label" for="Small">
+                <div>Small (Ksh 800)</div>
+              </label>
+            </div>
+          </div>
             <br>
-            <p><strong>CRUST:</strong></p>
+            <p><strong>CRUST: <div class="crust"></strong></p>
             <div class="radio">
                 <label>
                   <input type="radio" name="flavor" value="Crispy" checked>
@@ -77,13 +95,14 @@
                   Gluten-free
                 </label>
               </div>
-              <p><strong>TOPPINGS:</strong></p>
-              <select class="form-control" id="Toppings">
+              <p><strong>TOPPINGS: <div class="toppings"></strong></p>
+              <select class="form-check" id="Toppings">
                   <option>EXTRA CHEESE</option>
                   <option>BACON</option>
                   <option>PINEAPPLES</option>
                   <option>HAM</option>
                 </select>
+              </div>
          <input type="submit" class="button" value="ORDER" onclick="submit()">
        </form>
       </div>
