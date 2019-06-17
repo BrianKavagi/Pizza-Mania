@@ -79,7 +79,7 @@ $(function () {
     } else return 0;
    };
    function calculateSize(size) {
-    if (size === "small") {
+    if (size === "Small") {
       return 50;
     } else if (size === "Medium") {
       return 80;
